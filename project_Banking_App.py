@@ -7,7 +7,7 @@ class Bank:
   def deposit(self, amount):
     self.balance += amount
 
-  def withdrow(self, amount):
+  def withdrawal(self, amount):
     if self.balance >= amount:
       self.balance -= amount
       
@@ -42,14 +42,14 @@ def start():
         
       elif selection == "2":
           amount = int(input("What is amount you would like to withdraw?"))
-          bank.withdrawa(amount)
+          bank.withdrawal(amount)
         
           if amount in range(10, 1000):
               print("You can take your money")
           else:
               print("You do not have enough money on your account")  
-        
-      
+              continue
+            
       elif selection == "3":
        print(f"Your balance is: {bank.balance}")
       
