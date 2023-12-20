@@ -36,7 +36,7 @@ def start():
           print("Money have been placed on your account")
         else:
           print("Error")  
-        break
+      
           
       elif selection == "Withdrow":
         amount = int(input("What is amount to withdrow?"))
@@ -46,11 +46,11 @@ def start():
           print("You can take your money")
         else:
           print("You do not have enoph money on your account")  
-        break
+        
       
       elif selection == "Balance":
         print(f"Your balance is: {bank.balance}")
-        break
+        
       
       elif selection == "Exit":
         break
